@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sam{
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            transition: width 4s;
+        }
+        .sam:hover{
+            width: 400px;
+        }
+        .sam2{
+            width: 100px;
+            height: 100px;
+            background: green;
+            transition: width 8s, height 8s;
+        }
+        .sam2.sam:hover{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <p class="sam">4초간 늘어남</p>
+    <div class="sam"></div>
+    <p>8초간 늘어남</p>
+    <div class="sam2"></div>
+</body>
+</html>

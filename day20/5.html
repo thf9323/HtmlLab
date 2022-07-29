@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sam{
+            display: inline;
+        }
+        .sam2{
+            display: block;
+        }
+        .sam3{
+            display: inline-block;
+            width: 200px;
+            height: 100px;
+            margin: 10px;
+            border: 5px solid #20b2aa;
+        }
+    </style>
+</head>
+<body>
+    <h3>원래의 목록</h3>
+    <ul>
+        <li>청년기</li>
+        <li>중년기</li>
+        <li>노년기</li>
+    </ul>
+    <h3>display에 지정된 목록</h3>
+    <ul>
+        <li class="sam">청년기</li>
+        <li class="sam">중년기</li>
+        <li class="sam">노년기</li>
+    </ul>
+<hr><hr>
+<span>이 단락은 지정되지 않아서</span><span>인 라인 요소의 특성을 유지하므로 옆으로 길게 표시됩니다.</span>
+<br><br>
+<span class="sam2">이 단락은 지정</span><span class="sam2">블록레벨 요소처럼 각기 1개 라인을 차지</span>
+<hr><br><hr>
+<h3>블락상자</h3>
+<p class="sam3">inline-block 상자</p>
+<p class="sam3">inline-block 상자</p>
+<p class="sam3">inline-block 상자</p>
+<p class="sam3">inline-block 상자</p>
+<p class="sam3">inline-block 상자</p>
+<p class="sam3">inline-block 상자</p>
+
+</body>
+</html>

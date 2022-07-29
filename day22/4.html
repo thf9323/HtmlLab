@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .sample{
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            transition: width 2s, height 4s, transform 6s;
+        }
+        .sample :hover{
+            width: 200px;
+            height: 200px;
+            transform: rotate(180deg);
+        }
+        .sam2{
+            width: 100px;
+            height: 100px;
+            background: green;
+            transition: width 2s, height 4s, transform 6s;
+
+        }
+        .sam2:hover{
+            width: 200px;
+            height: 200px;
+            transform: skewX(20deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sample"></div>
+    <div class="sam2"></div>
+</body>
+</html>

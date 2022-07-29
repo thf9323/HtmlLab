@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rela{
+            position: relative;
+            width: 400px;
+            height: 200px;
+            border: 5px solid #dc143d;
+        }
+        .abso{
+            position: absolute;
+            bottom: 3px;
+            right: 10px;
+            width: 200px;
+            height: 100px;
+            border: 5px solid red;
+        }
+        .fix{
+            position: fixed;
+            top: 60px;
+            right: 20px;
+            width: 400px;
+            border: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h3>fixed</h3>
+    <p class="fix">이 박스는 fixed로 지정</p>
+    <h3>absolute</h3>
+    <div class="rela"> 이 박스는 relative 입니다.
+        <div class="abso">이 박스는 absolute 입니다.</div>
+    </div>
+</body>
+</html>

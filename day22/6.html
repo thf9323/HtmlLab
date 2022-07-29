@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sample{
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            border-style: solid;
+            border-radius: 0px;
+            border-width: 1px;
+            border-color: black;
+            margin-left: 0px;
+            
+            animation-name: example;
+            animation-duration: 8s;
+        }
+        @-webkit-keyframes example{
+            0%{background-color: green;
+            border-radius: 0px;
+            border-width: 2px;}
+            25%{background-color: green;
+            border-radius: 20px;
+            border-width: 4px;}
+            50%{background-color: green;
+            border-radius: 40px;
+            border-width: 6px;}
+            100%{background-color: green;
+            border-radius: 60px;
+            border-width: 8px;}
+            }
+        @keyframes example{
+            0%{background-color: green;
+            border-radius: 0px;
+            border-width: 2px;}
+            25%{background-color: blue;
+            border-radius: 20px;
+            border-width: 4px;}
+            50%{background-color: red;
+            border-radius: 40px;
+            border-width: 6px;}
+            100%{background-color: yellow;
+            border-radius: 60px;
+            border-width: 8px;}
+        }
+
+    </style>
+</head>
+<body>
+    <p>녹색이 8초에 걸쳐 노란색으로 이동합니다.</p>
+    <div class="sample"></div>
+    <p>애니메이션이 끝나면 녹색으로 표시</p>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sample{
+            border: 10px double darkred;
+            padding: 20px;
+            }
+        .sample2{
+            border: 5px solid darkred;
+            padding: 30px;
+            background: url("2.jpg");
+            background-repeat: no-repeat;
+            background-origin: border-box;
+        }
+        .sample3{
+            border: 5px solid darkred;
+            padding: 30px;
+            background: url("2.jpg");
+            background-repeat: no-repeat;
+            background-origin: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="sample">
+        <p>background-origin 지정안함</p>
+        <p>background-origin 지정안함</p>
+        <p></p>
+
+    </div>
+    <div class="sample2">
+        <p>border border-box지정 함</p>
+        <p>border border-box</p>
+    </div>
+    <div class="sample3">
+        <p>content-box 지정함</p>
+        <p>content-box 지정함</p>
+
+    </div>
+</body>
+</html>

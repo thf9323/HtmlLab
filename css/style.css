@@ -1,0 +1,264 @@
+* {
+    margin: 0; /* 바깥쪽 여백 */
+    padding: 0; /* 안쪽 여백 */
+    box-sizing: border-box; /*화면을 꽉 채움 */
+}
+
+#container {
+    margin: 0 auto; /* 화면 중앙 배치   */
+     width: 1200px; /* 너비 지정 */
+}
+
+header {
+    width: 100%;
+    height:100px;
+
+    background-color :#07c;
+}
+
+#logo {
+    float: left;
+    width: 250px;
+    height:100px;
+    /* background-color: indigo; */
+    line-height:100px;
+    padding-left:20px;
+}
+
+#logo h1 {
+    font-family: 'Lilita One', cursive;
+    font-size:50px;
+    color:#fff;
+    text-shadow: 0 -1px 0 #222;
+}
+
+nav {
+    float:right;
+    width:900px;
+    height:100px;
+    /* background-color: green; */
+    padding-top: 40px;
+}
+
+ul {
+    list-style: none;
+}
+
+#topMemu {
+    height: 60px;
+}
+
+#topMenu > li {
+    float: left;
+}
+
+#topMenu > li > a{
+    display:block;
+    color:#fff;
+    font-weight:600;
+    text-shadow: 0 1px #07c;
+    padding: 20px 60px;
+}
+
+#topMenu > li > a:hover{
+    color:#000;
+    text-shadow:0 -1px #07c;
+}
+
+#topMenu > li > ul {
+    display: none;
+    position: absolute;   /* 서브 메뉴로 포지셔닝 */
+    width: 160px;
+    margin:0;
+    left: 60px;
+}
+
+#topMenu > li > ul > a {
+    font-size: 14px;
+    padding:10px;
+    color:#000;
+}
+
+#topMenu > li:hover > ul{
+    display: block;
+    z-index:10;
+}
+
+#topMenu > li > ul > li > a:hover{
+    color: #f00;
+}
+
+#topMenu > li {
+    float: left;
+    position: relative;
+    /* 서브 메뉴를 부모 메뉴에 종속 시키기 위해 relative 를 지정 */
+}
+
+#slideShow {
+    clear:both; /* 플로팅 해제 */
+    width:100%;
+    height:300px;
+    background-color:orange;
+    overflow:hidden;/* 영역이 넘치면 감춤*/
+}
+
+#contents {
+    width:100%;
+    height:300px;
+}
+
+
+#tabMenu {
+    float:left;
+    width:600px;
+    height:100%;
+    /* background-color: violet; */
+}
+
+#tabMenu input[type="radio"] {
+    display:none;
+}
+
+
+#tabMenu label {
+    display:inline-block;  /* 탭을 가로로 배치 */
+    margin: 0 0;
+    padding: 15px 25px;
+    text-align: center;
+    color:#aaa;
+    border: 1px solid transparent;
+}
+
+#tabMenu label:hover {
+    color: #222;
+    cursor:pointer;
+}
+
+#tabMenu input:checked + label {
+    color: #b00;
+    border: 1px solid #ddd;
+    background-color: #eee;
+}
+
+.tabContent {
+    display:none;
+    padding: 20px 0 0;
+    border-top: 1px solid #ddd;
+}
+
+.tabContent h2 {
+    display:none;
+}
+
+#notice ul {
+    list-style:disc;
+    margin-left:30px;
+}
+
+#notice ul li {
+    font-size: 16px;
+    line-height:2.5;
+}
+
+#gallery ul li {
+    display:inline;
+}
+
+#tab1:checked ~ #notice,
+#tab2:checked ~ #gallery {
+    display: block;
+}
+
+
+#links {
+    float:right;
+    width:600px;
+    height:100%;
+    /* background-color: skyblue; */
+    padding-top: 42.5px;
+}
+#links ul{
+    padding: 0;
+    overflow: hidden;
+}
+#links ul li{
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    margin: 10px 0;
+    
+}
+#links ul li a span{
+    
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ddd;
+    line-height: 150px;
+    
+}
+#quick-icon1{
+    background-image: url('../imges/icon1.jfif');
+}
+#quick-icon2{
+    background-image: url('../imges/icon2.jfif');
+}
+#quick-icon3{
+    background-image: url('../imges/icon3.jfif');
+}
+#links ul li a p{
+    margin-top: 15px;
+    font-weight: 600;
+    color: #666;
+}
+footer{
+    width:100%;
+    height:100px;
+    /* background-color: gray; */
+    border-top: 2px solid #222;
+}
+#bottomMenu{
+    width: 100%;
+    height: 20px;
+    position: relative;
+}
+#bottomMenu ul{
+    margin-top: 15px;
+    text-align: left;
+}
+#bottomMenu ul li{
+    
+    float: left;
+    padding: 5px 20px;
+    border-right: 1px solid #ddd;
+}
+#bottomMenu ul li:last-child{
+    border-right: none;
+}
+
+#sns{
+    position: absolute;
+    right:200px;
+}
+/* #sns ul{
+    margin: 15px;
+    
+} */
+#sns ul li{
+    float: left;
+    border: none;
+    padding: 5px ;
+    
+}
+
+#company{
+    text-align: center;
+    clear: both;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+}
